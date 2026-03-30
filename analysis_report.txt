@@ -1,0 +1,119 @@
+Wisteria Model Performance Analysis - Full Report
+Generated on: 2025-10-01 12:00:03
+==================================================
+
+--- Top 5 Most Over-Predicted Postcode Districts (Model is too high) ---
+| postcode_district   |   mean_percentage_error |   property_count |
+|:--------------------|------------------------:|-----------------:|
+| DD                  |               0.120707  |               19 |
+| KA                  |               0.11621   |               92 |
+| B                   |               0.0612474 |               18 |
+| BH                  |               0.0593677 |               50 |
+| IP                  |               0.0363814 |               39 |
+
+--- Top 5 Most Under-Predicted Postcode Districts (Model is too low) ---
+| postcode_district   |   mean_percentage_error |   property_count |
+|:--------------------|------------------------:|-----------------:|
+| IV                  |              -0.125674  |                6 |
+| FK                  |              -0.0481075 |               58 |
+| DA                  |              -0.0245748 |               55 |
+| SA                  |              -0.0136022 |               27 |
+| KT                  |              -0.0115223 |               48 |
+
+--- Exhaustive Analysis by Routing Decision ---
+This section provides a detailed performance breakdown for each model route.
+
+1. Overall Performance Metrics by Route:
+| routing_decision   |   property_count |   percentage_of_total |     mean_ae |   median_ae |   mean_mape |        rmse |   bias_mean_pe |
+|:-------------------|-----------------:|----------------------:|------------:|------------:|------------:|------------:|---------------:|
+| PREDICTOR_CHIMERA  |              184 |               11.1111 | 33,227.5243 | 18,105.7996 |      0.2209 | 53,493.7289 |         0.0447 |
+| CORRECTOR_ANOMALY  |               74 |                4.4686 | 38,123.5132 | 13,197.6751 |      0.0488 | 80,103.9736 |         0.0097 |
+| GENERALIST         |             1398 |               84.4203 |  8,780.8085 |  3,295.4903 |      0.0279 | 26,043.4907 |         0.0036 |
+
+2. Cross-Analysis: Mean MAPE by Route and Price Band:
+| routing_decision   | < £250k   | £250k-£500k   | £500k-£1M   | > £1M   |
+|:-------------------|:----------|:--------------|:------------|:--------|
+| CORRECTOR_ANOMALY  | 8.74%     | 4.06%         | 3.04%       | 7.75%   |
+| GENERALIST         | 3.26%     | 2.32%         | 2.89%       | 1.09%   |
+| PREDICTOR_CHIMERA  | 23.21%    | 16.60%        | 31.04%      | N/A     |
+
+3. Cross-Analysis: Mean MAPE by Route and Property Type:
+| routing_decision   | Apartment   | Flat   | House   |
+|:-------------------|:------------|:-------|:--------|
+| CORRECTOR_ANOMALY  | 28.06%      | 2.52%  | 4.71%   |
+| GENERALIST         | 3.19%       | 1.72%  | 2.82%   |
+| PREDICTOR_CHIMERA  | N/A         | 36.83% | 21.84%  |
+
+--- Model Performance by Property Type ---
+| property_type   |   mean_mape |   median_ae |   property_count |
+|:----------------|------------:|------------:|-----------------:|
+| Apartment       |   0.0816709 |     4485.51 |                5 |
+| Flat            |   0.0386772 |     2665.66 |               51 |
+| House           |   0.0505475 |     4175.15 |             1600 |
+
+--- Model Performance by Price Band ---
+| price_band   |   mean_mape |   median_ae |   property_count |
+|:-------------|------------:|------------:|-----------------:|
+| < £250k      |   0.074114  |     2535.25 |              706 |
+| £250k-£500k  |   0.0315285 |     4220.36 |              646 |
+| £500k-£1M    |   0.0329978 |     9078.77 |              289 |
+| > £1M        |   0.0685798 |    94298.1  |               15 |
+
+--- Jurisdiction ID column not found; skipping jurisdiction analysis. ---
+
+--- Skipping Cross-Dimensional analysis due to missing 'jurisdiction_id' column. ---
+
+--- Top 5 Individual Properties with Highest MAPE ---
+| property_id                                                                          |   most_recent_sale_price |   predicted_price |    mape |
+|:-------------------------------------------------------------------------------------|-------------------------:|------------------:|--------:|
+| 89d walker road ayr ayrshire ka8 9lf                                                 |                    40000 |          118368   | 1.95919 |
+| 127a tuckton road southbourne bournemouth bournemouth christchurch and poole bh6 3jz |                   115000 |          317820   | 1.76365 |
+| 86 park crescent dalmellington ayr ayrshire ka6 7rr                                  |                    45000 |          117546   | 1.61214 |
+| 35 lulworth court dundee angus dd4 0ls                                               |                    28500 |           66163.7 | 1.32153 |
+| 92 back hamlet ipswich suffolk ip3 8aj                                               |                    80000 |          182160   | 1.277   |
+
+--- Analysis by Postcode Area (Top 5 High Error) ---
+   postcode_area       mean_ae     median_ae  property_count  mean_mape  z_score_mape
+38            KA  36042.640841  21022.685387              92   0.267764      3.949985
+20            DD  25264.015610  19603.334084              19   0.257965      3.776419
+23            FK  24729.793432  12249.604537              58   0.139564      1.679169
+37            IV  26144.855697  30016.955646               6   0.133437      1.570642
+5             BH  24315.086418   9367.164738              50   0.087566      0.758109
+
+--- Stakeholder Markdown Report ---
+The following summary has also been saved to model_performance_summary.md
+
+### **Wisteria Model Performance Report: Geospatial Error Analysis**
+
+**Analysis Date:** 2025-10-01
+**Methodology:** This report identifies geographic areas of abnormal model performance by calculating the Mean Absolute Percentage Error (MAPE) grouped by Postcode District. Anomaly detection is performed using a Z-score statistical test, with a significance threshold of |Z| ≥ 0.5 and a minimum sample size of 5 properties per group.
+
+**Key Findings:**
+*   A total of **1,656** properties were analyzed. **0** properties failed the initial address parsing and validation stage.
+
+---
+
+#### **Top 5 Most Abnormally High-Error (Underperforming) Postcode Districts**
+
+| postcode_district   |   property_count | mean_ae   | mean_mape   |   z_score_mape |
+|:--------------------|-----------------:|:----------|:------------|---------------:|
+| KA                  |               92 | 36,042.64 | 26.78%      |           3.9  |
+| DD                  |               19 | 25,264.02 | 25.80%      |           3.8  |
+| FK                  |               58 | 24,729.79 | 13.96%      |           1.7  |
+| IV                  |                6 | 26,144.86 | 13.34%      |           1.6  |
+| BH                  |               50 | 24,315.09 | 8.76%       |           0.76 |
+
+**Example High-Error Property:** `property_id: 89d walker road ayr ayrshire ka8 9lf`, Sale Price: £40,000, Absolute Error: £78,367 (195.9% MAPE).
+
+---
+
+#### **Top 5 Most Abnormally Low-Error (Overperforming) Postcode Districts**
+
+| postcode_district   |   property_count | mean_ae   | mean_mape   |   z_score_mape |
+|:--------------------|-----------------:|:----------|:------------|---------------:|
+| EN                  |               14 | 2,261.36  | 0.73%       |          -0.66 |
+| HA                  |               19 | 6,309.15  | 1.10%       |          -0.6  |
+| CR                  |               26 | 7,087.00  | 1.14%       |          -0.59 |
+| HX                  |               18 | 3,400.37  | 1.50%       |          -0.53 |
+
+**Example Low-Error Property:** `property_id: 12 faverolle green cheshunt waltham cross hertfordshire en8 0uj`, Sale Price: £401,000, Absolute Error: £35 (0.0% MAPE).

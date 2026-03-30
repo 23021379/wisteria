@@ -1,0 +1,77 @@
+import pandas as pd
+import os
+
+# --- Configuration ---
+# The file path you provided for your dataset.
+# Using a raw string (r"...") is a good practice for Windows paths to avoid issues with backslashes.
+input_path = r"C:\Users\dell\Desktop\House Data Scrape\final_enriched_ml_dataset.parquet"
+output_directory = os.path.dirname(input_path)
+
+# --- Load the Dataset ---
+print(f"Loading dataset from: {input_path}")
+try:
+    df = pd.read_parquet(input_path)
+    print("Dataset loaded successfully.")
+    print(f"Shape of the full dataset: {df.shape}")
+except FileNotFoundError:
+    print(f"ERROR: The file was not found at the specified path: {input_path}")
+    print("Please ensure the file path is correct and try again.")
+    exit()
+
+# --- Define Feature Groups ---
+
+# 1. Identifier columns (to be included in all subsets for joining)
+# These are the keys that link the different geographical levels.
+identifier_cols = [
+    'postcode', 'output_area_2011', 'output_area_2021', 'lsoa_2011',
+    'lsoa_2021', 'msoa_2011', 'msoa_2021', 'lad_code', 'wz_code'
+]
+
+# 2. Postcode-level features: Coordinates and aggregated sales stats
+# These features are at the most granular property/postcode level.
+postcode_cols = [col for col in df.columns if col in [
+    'latitude', 'longitude', 'sale_count', 'weighted_avg_price',
+    'weighted_median_price', 'weighted_std_dev', 'min_price', 'max_price',
+    'price_range', 'oldest_sale_year', 'newest_sale_year'] or 'sale_count' in col and '_sale_count' not in col
+]
+
+# 3. Census / Output Area Classification features
+# These describe the socio-economic fabric of small areas.
+ons_oac_cols = [col for col in df.columns if col.startswith(('ons_', 'oac_'))]
+
+# 4. Environmental, Accessibility & Property Age features (mostly LSOA level)
+# These describe the physical environment and local amenities.
+environment_cols = [col for col in df.columns if col.startswith(('ahah_', 'ages_', 'veg_'))]
+
+# 5. Time-series features (Historical Market Dynamics)
+# These capture price and transaction trends over time.
+timeseries_cols = [col for col in df.columns if col.startswith(('price_median_', 'trans_count_'))]
+
+
+# --- Create and Save Subsets ---
+
+# Subset 1: Postcode Data
+df_postcode = df[identifier_cols + postcode_cols]
+output_path_postcode = os.path.join(output_directory, "subset_1_postcode.parquet")
+df_postcode.to_parquet(output_path_postcode)
+print(f"Saved Postcode subset with shape {df_postcode.shape} to: {output_path_postcode}")
+
+# Subset 2: ONS / OAC Data
+df_ons_oac = df[identifier_cols + ons_oac_cols]
+output_path_ons_oac = os.path.join(output_directory, "subset_2_ons_oac.parquet")
+df_ons_oac.to_parquet(output_path_ons_oac)
+print(f"Saved ONS/OAC subset with shape {df_ons_oac.shape} to: {output_path_ons_oac}")
+
+# Subset 3: Environmental Data
+df_environment = df[identifier_cols + environment_cols]
+output_path_environment = os.path.join(output_directory, "subset_3_environment.parquet")
+df_environment.to_parquet(output_path_environment)
+print(f"Saved Environment subset with shape {df_environment.shape} to: {output_path_environment}")
+
+# Subset 4: Time-Series Data
+df_timeseries = df[identifier_cols + timeseries_cols]
+output_path_timeseries = os.path.join(output_directory, "subset_4_timeseries.parquet")
+df_timeseries.to_parquet(output_path_timeseries)
+print(f"Saved Time-Series subset with shape {df_timeseries.shape} to: {output_path_timeseries}")
+
+print("\nAll subsets have been created and saved successfully.")

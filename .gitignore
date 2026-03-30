@@ -1,0 +1,28 @@
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore datasets
+*.csv
+*.json
+*.xlsx
+*.parquet
+*.geoparquet
+*.md
+
+#model files
+*.h5
+*.pkl
+*.joblib
+
+#image files
+*.png
+*.jpg
+
+
+# Ignore secret keys (e.g., in a .env file)
+.env
+
+# Ignore system files
+.DS_Store
+Thumbs.db

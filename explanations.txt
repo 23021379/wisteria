@@ -1,0 +1,36 @@
+Chimnie info:
+National: (how the property compares to every other property in uk)
+overall location score, access to education (distance to schools+performance), safety, distance to restaurant score, air quality, safe roads, loudness, access to natural space, distance to supermarket, flood protection
+Regional:(how the property compares to every other property in county)
+Local:(how the property compares to every other property in domain)
+
+
+
+BricksandLogic:
+internal area, valuation, mortgage, plotsize(if available), no. of houses have plot size data, no. of houses in area, distance to primary school 1, distance to primary school 2, distance to primary school 3, primary school 1 rating, primary school 2 rating, primary school 3 rating, distance to secondary school 1, distance to secondary school 2, distance to secondary school 3, secondary school 1 rating, secondary school 2 rating, secondary school 3 rating, [ownership in area], [education in area], average age2, average age, percentage with second home, verage cars per home, number of nearby sales in past 2 years, number of property sales, rent
+
+
+
+mousePrice:
+confidence, valuation, , [preoperty data], [property data compared to road], house type, [property data (guesses)], [property data compared to road (guesses)], [running costs types], [running costs prices].
+
+
+
+
+
+
+I want to use chimnies data in conjuction with getagent.co.uk and home.co.uk, 
+as these provide average price of houses similar to the one i am looking at.
+These creates a relationship between chimnies info and house prices in the domain area.
+
+
+Streetscan's data can be used in conjuction with themovemarket's to create
+a relationship between subdomain data and average pricecs in the area.
+
+The preceeding data can also be used to construct a qualitative dataset which can be 
+parsed through an llm, which can boil down the data and create insights.
+
+
+
+
+

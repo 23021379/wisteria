@@ -1,0 +1,1556 @@
+=====================================================
+=== Wisteria Model Blind Spot Analysis Report ===
+=====================================================
+
+Displaying top 129 properties with the highest percentage error.
+Criteria: Percentage Error > 15% AND Absolute Error > £5,000
+-----------------------------------------------------
+
+Property ID: 77a west main street darvel ayrshire ka17 0eb
+  - Sale Price:      £11,000
+  - Predicted Price: £73,582
+  - Absolute Error:  £62,582
+  - Percentage Error: 568.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4249)
+    2. dna_x_aesthetic (-0.2212)
+    3. oof_pred_head_C_census (-0.1162)
+
+-----------------------------------------------------
+
+Property ID: 12 york lane grangemouth stirlingshire fk3 8bb
+  - Sale Price:      £62,000
+  - Predicted Price: £200,018
+  - Absolute Error:  £138,018
+  - Percentage Error: 222.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1314)
+    2. oof_pred_head_C_census (-0.1082)
+    3. dna_minus_census (-0.0692)
+
+-----------------------------------------------------
+
+Property ID: 39 eastfield road newcastle upon tyne tyne and wear ne12 8bd
+  - Sale Price:      £79,500
+  - Predicted Price: £219,224
+  - Absolute Error:  £139,724
+  - Percentage Error: 175.8%
+  - Top Contributing Features (SHAP Value):
+    1. num__0Unknown__hm (-0.1195)
+    2. dna_x_aesthetic (-0.0577)
+    3. num__2Moderate_hm (-0.0368)
+
+-----------------------------------------------------
+
+Property ID: 2a drummond place stirling stirlingshire fk8 2jd
+  - Sale Price:      £205,000
+  - Predicted Price: £500,989
+  - Absolute Error:  £295,989
+  - Percentage Error: 144.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2993)
+    2. dna_x_aesthetic (+0.1019)
+    3. num__2Moderate_hm (+0.0553)
+
+-----------------------------------------------------
+
+Property ID: 20 curran court tillicoultry clackmannanshire fk13 6bq
+  - Sale Price:      £95,000
+  - Predicted Price: £218,772
+  - Absolute Error:  £123,772
+  - Percentage Error: 130.3%
+  - Top Contributing Features (SHAP Value):
+    1. latitude (-0.0569)
+    2. oof_pred_head_A_dna_engineered (-0.0325)
+    3. dna_minus_census (-0.0251)
+
+-----------------------------------------------------
+
+Property ID: 72 mount pleasant way kilmarnock ayrshire ka3 1hj
+  - Sale Price:      £65,000
+  - Predicted Price: £126,788
+  - Absolute Error:  £61,788
+  - Percentage Error: 95.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2917)
+    2. dna_x_aesthetic (-0.0989)
+    3. oof_pred_head_C_census (-0.0713)
+
+-----------------------------------------------------
+
+Property ID: 15 templand drive cumnock ayrshire ka18 1er
+  - Sale Price:      £80,000
+  - Predicted Price: £149,504
+  - Absolute Error:  £69,504
+  - Percentage Error: 86.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1770)
+    2. oof_pred_head_C_census (-0.0808)
+    3. dna_x_aesthetic (-0.0790)
+
+-----------------------------------------------------
+
+Property ID: 4 churchill tower south harbour street ayr ayrshire ka7 1jt
+  - Sale Price:      £132,012
+  - Predicted Price: £234,443
+  - Absolute Error:  £102,431
+  - Percentage Error: 77.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_C_census (-0.1029)
+    2. dna_minus_census (-0.0592)
+    3. num__2Moderate_hm (+0.0580)
+
+-----------------------------------------------------
+
+Property ID: 10 edinburgh road little lever bolton greater manchester bl3 1tg
+  - Sale Price:      £82,733
+  - Predicted Price: £136,970
+  - Absolute Error:  £54,237
+  - Percentage Error: 65.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3886)
+    2. num__2Moderate_hm (-0.1298)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1035)
+
+-----------------------------------------------------
+
+Property ID: 15 milton park coylton ayr ayrshire ka6 6jf
+  - Sale Price:      £280,000
+  - Predicted Price: £109,599
+  - Absolute Error:  £170,401
+  - Percentage Error: 60.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.5890)
+    2. dna_x_aesthetic (-0.1564)
+    3. num__INT_avg_estimated_price (-0.0695)
+
+-----------------------------------------------------
+
+Property ID: 7 greyfriars avenue hereford herefordshire hr4 0be
+  - Sale Price:      £240,000
+  - Predicted Price: £383,203
+  - Absolute Error:  £143,203
+  - Percentage Error: 59.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1246)
+    2. num__last_sold_price_gbp_hm (+0.1154)
+    3. num__0Unknown__hm (-0.0936)
+
+-----------------------------------------------------
+
+Property ID: 4a carrick place prestwick ayrshire ka9 1rt
+  - Sale Price:      £88,000
+  - Predicted Price: £139,817
+  - Absolute Error:  £51,817
+  - Percentage Error: 58.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4149)
+    2. dna_x_aesthetic (-0.1780)
+    3. price_change_since_last (-0.0493)
+
+-----------------------------------------------------
+
+Property ID: boundary cottage high maybole road ayr ayrshire ka7 4eb
+  - Sale Price:      £330,000
+  - Predicted Price: £141,882
+  - Absolute Error:  £188,118
+  - Percentage Error: 57.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.5709)
+    2. dna_x_aesthetic (-0.0589)
+    3. num__INT_avg_estimated_price (-0.0533)
+
+-----------------------------------------------------
+
+Property ID: 56 dean street stewarton kilmarnock ayrshire ka3 5eq
+  - Sale Price:      £55,500
+  - Predicted Price: £86,848
+  - Absolute Error:  £31,348
+  - Percentage Error: 56.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6212)
+    2. dna_x_aesthetic (-0.1590)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1322)
+
+-----------------------------------------------------
+
+Property ID: 12 loch street wick caithness kw1 5qj
+  - Sale Price:      £67,000
+  - Predicted Price: £103,470
+  - Absolute Error:  £36,470
+  - Percentage Error: 54.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4639)
+    2. dna_x_aesthetic (-0.1998)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0906)
+
+-----------------------------------------------------
+
+Property ID: 3b high street mauchline ayrshire ka5 6aj
+  - Sale Price:      £51,500
+  - Predicted Price: £79,043
+  - Absolute Error:  £27,543
+  - Percentage Error: 53.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6361)
+    2. dna_x_aesthetic (-0.2476)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1284)
+
+-----------------------------------------------------
+
+Property ID: 21 kersland foot girdle toll irvine ayrshire ka11 1bp
+  - Sale Price:      £68,800
+  - Predicted Price: £103,569
+  - Absolute Error:  £34,769
+  - Percentage Error: 50.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4735)
+    2. dna_x_aesthetic (-0.1697)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0819)
+
+-----------------------------------------------------
+
+Property ID: 14 merrygreen place stewarton kilmarnock ayrshire ka3 5ej
+  - Sale Price:      £60,000
+  - Predicted Price: £90,309
+  - Absolute Error:  £30,309
+  - Percentage Error: 50.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4628)
+    2. dna_x_aesthetic (-0.2549)
+    3. num__INT_avg_estimated_price (-0.0767)
+
+-----------------------------------------------------
+
+Property ID: wester corrie school road muckhart dollar perthshire fk14 7je
+  - Sale Price:      £680,000
+  - Predicted Price: £341,382
+  - Absolute Error:  £338,618
+  - Percentage Error: 49.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2730)
+    2. price_change_since_last (+0.1119)
+    3. num_images_total (+0.0761)
+
+-----------------------------------------------------
+
+Property ID: 32a high street nairn nairnshire iv12 4au
+  - Sale Price:      £112,000
+  - Predicted Price: £166,956
+  - Absolute Error:  £54,956
+  - Percentage Error: 49.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2667)
+    2. dna_x_aesthetic (-0.1013)
+    3. latitude (-0.0557)
+
+-----------------------------------------------------
+
+Property ID: 67 windsor road falkirk stirlingshire fk1 5hb
+  - Sale Price:      £70,000
+  - Predicted Price: £102,967
+  - Absolute Error:  £32,967
+  - Percentage Error: 47.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3985)
+    2. dna_x_aesthetic (-0.1683)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0812)
+
+-----------------------------------------------------
+
+Property ID: 2 muirton road dundee angus dd2 2jp
+  - Sale Price:      £60,000
+  - Predicted Price: £88,093
+  - Absolute Error:  £28,093
+  - Percentage Error: 46.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4724)
+    2. dna_x_aesthetic (-0.2304)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0904)
+
+-----------------------------------------------------
+
+Property ID: 22b castle vale stirling stirlingshire fk9 5nx
+  - Sale Price:      £120,000
+  - Predicted Price: £175,975
+  - Absolute Error:  £55,975
+  - Percentage Error: 46.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1778)
+    2. latitude (-0.0445)
+    3. oof_pred_head_compass_raw (-0.0422)
+
+-----------------------------------------------------
+
+Property ID: 58 macadam place ayr ayrshire ka8 0aw
+  - Sale Price:      £39,000
+  - Predicted Price: £57,075
+  - Absolute Error:  £18,075
+  - Percentage Error: 46.3%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6621)
+    2. dna_x_aesthetic (-0.2437)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1250)
+
+-----------------------------------------------------
+
+Property ID: 48d prestwick road ayr ayrshire ka8 8jr
+  - Sale Price:      £90,000
+  - Predicted Price: £130,698
+  - Absolute Error:  £40,698
+  - Percentage Error: 45.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1903)
+    2. dna_x_aesthetic (-0.1378)
+    3. oof_pred_head_C_census (-0.1290)
+
+-----------------------------------------------------
+
+Property ID: 26 heather park ayr ayrshire ka7 3xl
+  - Sale Price:      £102,500
+  - Predicted Price: £147,406
+  - Absolute Error:  £44,906
+  - Percentage Error: 43.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2776)
+    2. dna_x_aesthetic (-0.1011)
+    3. oof_pred_head_C_census (-0.0660)
+
+-----------------------------------------------------
+
+Property ID: 21 riverside gardens cronberry cumnock ayrshire ka18 3lu
+  - Sale Price:      £50,000
+  - Predicted Price: £71,752
+  - Absolute Error:  £21,752
+  - Percentage Error: 43.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6768)
+    2. dna_x_aesthetic (-0.2650)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1588)
+
+-----------------------------------------------------
+
+Property ID: 42 lynwood guildford surrey gu2 7ny
+  - Sale Price:      £345,000
+  - Predicted Price: £493,204
+  - Absolute Error:  £148,204
+  - Percentage Error: 43.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2876)
+    2. dna_x_aesthetic (+0.0642)
+    3. num__2Moderate_hm (+0.0463)
+
+-----------------------------------------------------
+
+Property ID: 20 the hedges camelon falkirk stirlingshire fk1 4dz
+  - Sale Price:      £66,000
+  - Predicted Price: £93,668
+  - Absolute Error:  £27,668
+  - Percentage Error: 41.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4931)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.1243)
+    3. dna_x_aesthetic (-0.0868)
+
+-----------------------------------------------------
+
+Property ID: 99 compair crescent ipswich suffolk ip2 0ej
+  - Sale Price:      £85,000
+  - Predicted Price: £119,875
+  - Absolute Error:  £34,875
+  - Percentage Error: 41.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4464)
+    2. dna_x_aesthetic (-0.1541)
+    3. num__last_sold_price_gbp_hm (+0.1294)
+
+-----------------------------------------------------
+
+Property ID: 96 craigleith road grangemouth stirlingshire fk3 0ba
+  - Sale Price:      £182,000
+  - Predicted Price: £107,654
+  - Absolute Error:  £74,346
+  - Percentage Error: 40.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4362)
+    2. dna_x_aesthetic (-0.2266)
+    3. oof_pred_head_C_census (-0.0790)
+
+-----------------------------------------------------
+
+Property ID: 33 oswalds way tarporley chester cheshire west and chester cw6 0gf
+  - Sale Price:      £85,000
+  - Predicted Price: £119,512
+  - Absolute Error:  £34,512
+  - Percentage Error: 40.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4245)
+    2. num__2Moderate_hm (-0.1087)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1043)
+
+-----------------------------------------------------
+
+Property ID: 11 keir hardie crescent galston ayrshire ka4 8jl
+  - Sale Price:      £55,750
+  - Predicted Price: £78,095
+  - Absolute Error:  £22,345
+  - Percentage Error: 40.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6186)
+    2. dna_x_aesthetic (-0.1936)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1079)
+
+-----------------------------------------------------
+
+Property ID: 18a blair street galston ayrshire ka4 8je
+  - Sale Price:      £155,000
+  - Predicted Price: £94,245
+  - Absolute Error:  £60,755
+  - Percentage Error: 39.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4136)
+    2. oof_pred_head_C_census (-0.1359)
+    3. dna_x_aesthetic (-0.1234)
+
+-----------------------------------------------------
+
+Property ID: 15 henrietta street galston ayrshire ka4 8hn
+  - Sale Price:      £39,999
+  - Predicted Price: £55,651
+  - Absolute Error:  £15,652
+  - Percentage Error: 39.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6363)
+    2. dna_x_aesthetic (-0.2464)
+    3. oof_pred_head_C_census (-0.1074)
+
+-----------------------------------------------------
+
+Property ID: 12 goldsmith house the connexion mansfield nottinghamshire ng18 5pb
+  - Sale Price:      £290,000
+  - Predicted Price: £178,684
+  - Absolute Error:  £111,316
+  - Percentage Error: 38.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3319)
+    2. price_change_since_last (+0.1298)
+    3. num__2Moderate_hm (-0.0852)
+
+-----------------------------------------------------
+
+Property ID: 7 cathcart street ayr ayrshire ka7 1bj
+  - Sale Price:      £220,000
+  - Predicted Price: £136,658
+  - Absolute Error:  £83,342
+  - Percentage Error: 37.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1746)
+    2. oof_pred_head_C_census (-0.0951)
+    3. num__INT_avg_estimated_price (-0.0680)
+
+-----------------------------------------------------
+
+Property ID: 90 portland avenue gravesend kent da12 5hf
+  - Sale Price:      £315,000
+  - Predicted Price: £432,091
+  - Absolute Error:  £117,091
+  - Percentage Error: 37.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1625)
+    2. num__last_sold_price_gbp_hm (+0.1295)
+    3. num__INT_hm_price_vs_last_sold_ratio (+0.0506)
+
+-----------------------------------------------------
+
+Property ID: 1 chapel court platcock wynd fortrose ross and cromarty iv10 8sq
+  - Sale Price:      £145,000
+  - Predicted Price: £196,962
+  - Absolute Error:  £51,962
+  - Percentage Error: 35.8%
+  - Top Contributing Features (SHAP Value):
+    1. latitude (-0.0630)
+    2. oof_pred_head_A_dna_raw (-0.0517)
+    3. num__INT_avg_estimated_price (-0.0402)
+
+-----------------------------------------------------
+
+Property ID: 24 fothringham road ayr ayrshire ka8 0ey
+  - Sale Price:      £275,000
+  - Predicted Price: £371,595
+  - Absolute Error:  £96,595
+  - Percentage Error: 35.1%
+  - Top Contributing Features (SHAP Value):
+    1. dna_x_aesthetic (+0.0681)
+    2. oof_pred_head_A_dna_raw (+0.0532)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (+0.0414)
+
+-----------------------------------------------------
+
+Property ID: 21 evan barron road inverness inverness-shire iv2 4ja
+  - Sale Price:      £112,000
+  - Predicted Price: £72,910
+  - Absolute Error:  £39,090
+  - Percentage Error: 34.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.7601)
+    2. dna_x_aesthetic (-0.2428)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1313)
+
+-----------------------------------------------------
+
+Property ID: 52 garvine road coylton ayr ayrshire ka6 6nz
+  - Sale Price:      £250,000
+  - Predicted Price: £163,111
+  - Absolute Error:  £86,889
+  - Percentage Error: 34.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3462)
+    2. dna_x_aesthetic (-0.0666)
+    3. num__INT_avg_estimated_price (-0.0573)
+
+-----------------------------------------------------
+
+Property ID: 10 broadside court denny stirlingshire fk6 5gz
+  - Sale Price:      £105,000
+  - Predicted Price: £140,549
+  - Absolute Error:  £35,549
+  - Percentage Error: 33.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4076)
+    2. dna_x_aesthetic (-0.1657)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1049)
+
+-----------------------------------------------------
+
+Property ID: 48 elizabeth avenue grangemouth stirlingshire fk3 9de
+  - Sale Price:      £135,000
+  - Predicted Price: £180,370
+  - Absolute Error:  £45,370
+  - Percentage Error: 33.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2445)
+    2. dna_x_aesthetic (-0.0755)
+    3. oof_pred_head_C_census (-0.0544)
+
+-----------------------------------------------------
+
+Property ID: 261 parr lane unsworth bury greater manchester bl9 8lx
+  - Sale Price:      £240,000
+  - Predicted Price: £319,254
+  - Absolute Error:  £79,254
+  - Percentage Error: 33.0%
+  - Top Contributing Features (SHAP Value):
+    1. num__last_sold_price_gbp_hm (+0.0626)
+    2. num__2Moderate_hm (-0.0261)
+    3. price_change_since_last (+0.0222)
+
+-----------------------------------------------------
+
+Property ID: 38 hayocks road stevenston ayrshire ka20 4dg
+  - Sale Price:      £50,000
+  - Predicted Price: £66,118
+  - Absolute Error:  £16,118
+  - Percentage Error: 32.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6393)
+    2. dna_x_aesthetic (-0.2418)
+    3. num__INT_avg_estimated_price (-0.1033)
+
+-----------------------------------------------------
+
+Property ID: 2 st. georges road ayr ayrshire ka8 9hn
+  - Sale Price:      £200,000
+  - Predicted Price: £136,408
+  - Absolute Error:  £63,592
+  - Percentage Error: 31.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2596)
+    2. oof_pred_head_C_census (-0.0943)
+    3. dna_minus_census (-0.0700)
+
+-----------------------------------------------------
+
+Property ID: 9 ambleside chester cheshire west and chester ch2 2pu
+  - Sale Price:      £402,000
+  - Predicted Price: £274,476
+  - Absolute Error:  £127,524
+  - Percentage Error: 31.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2081)
+    2. num__last_sold_price_gbp_hm (+0.1816)
+    3. dna_minus_census (+0.0540)
+
+-----------------------------------------------------
+
+Property ID: 5 seright crescent crookedholm kilmarnock ayrshire ka3 6jn
+  - Sale Price:      £96,123
+  - Predicted Price: £126,390
+  - Absolute Error:  £30,267
+  - Percentage Error: 31.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3901)
+    2. dna_x_aesthetic (-0.0786)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0614)
+
+-----------------------------------------------------
+
+Property ID: 4 tenterfield street rossendale lancashire bb4 7ba
+  - Sale Price:      £100,000
+  - Predicted Price: £131,118
+  - Absolute Error:  £31,118
+  - Percentage Error: 31.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3807)
+    2. dna_x_aesthetic (-0.1578)
+    3. num__last_sold_price_gbp_hm (+0.1429)
+
+-----------------------------------------------------
+
+Property ID: 333 perth road dundee angus dd2 1lq
+  - Sale Price:      £458,000
+  - Predicted Price: £315,705
+  - Absolute Error:  £142,295
+  - Percentage Error: 31.1%
+  - Top Contributing Features (SHAP Value):
+    1. dna_x_aesthetic (+0.0828)
+    2. oof_pred_head_C_census (-0.0497)
+    3. latitude (-0.0370)
+
+-----------------------------------------------------
+
+Property ID: 298 derby road nottingham city of nottingham ng7 1qf
+  - Sale Price:      £470,000
+  - Predicted Price: £325,665
+  - Absolute Error:  £144,335
+  - Percentage Error: 30.7%
+  - Top Contributing Features (SHAP Value):
+    1. num__0Unknown__hm (-0.0914)
+    2. price_change_since_last (+0.0721)
+    3. dna_x_aesthetic (+0.0458)
+
+-----------------------------------------------------
+
+Property ID: 49 cliff lane ipswich suffolk ip3 0pd
+  - Sale Price:      £305,000
+  - Predicted Price: £211,412
+  - Absolute Error:  £93,588
+  - Percentage Error: 30.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1904)
+    2. num__2Moderate_hm (-0.0613)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (-0.0450)
+
+-----------------------------------------------------
+
+Property ID: 192 lowerhouses lane huddersfield west yorkshire hd5 8jz
+  - Sale Price:      £200,000
+  - Predicted Price: £139,797
+  - Absolute Error:  £60,203
+  - Percentage Error: 30.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3756)
+    2. num__last_sold_price_gbp_hm (+0.1713)
+    3. dna_x_aesthetic (-0.1325)
+
+-----------------------------------------------------
+
+Property ID: 5 flat 3 wellsbourne savoy park ayr ayrshire ka7 2xa
+  - Sale Price:      £270,000
+  - Predicted Price: £188,804
+  - Absolute Error:  £81,196
+  - Percentage Error: 30.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2912)
+    2. dna_x_aesthetic (-0.0783)
+    3. latitude (-0.0389)
+
+-----------------------------------------------------
+
+Property ID: 90 william fitzgerald way dundee angus dd4 9fb
+  - Sale Price:      £218,000
+  - Predicted Price: £152,760
+  - Absolute Error:  £65,240
+  - Percentage Error: 29.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1653)
+    2. oof_pred_head_C_census (-0.0897)
+    3. latitude (-0.0510)
+
+-----------------------------------------------------
+
+Property ID: 50 south marshall street grangemouth stirlingshire fk3 8lp
+  - Sale Price:      £112,000
+  - Predicted Price: £78,883
+  - Absolute Error:  £33,117
+  - Percentage Error: 29.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.7280)
+    2. dna_x_aesthetic (-0.2373)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1149)
+
+-----------------------------------------------------
+
+Property ID: 121d welbeck crescent troon ayrshire ka10 6ar
+  - Sale Price:      £112,000
+  - Predicted Price: £78,960
+  - Absolute Error:  £33,040
+  - Percentage Error: 29.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.7334)
+    2. dna_x_aesthetic (-0.2262)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1167)
+
+-----------------------------------------------------
+
+Property ID: 16 acton road whitstable kent ct5 1jh
+  - Sale Price:      £140,000
+  - Predicted Price: £181,291
+  - Absolute Error:  £41,291
+  - Percentage Error: 29.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1876)
+    2. num__2Moderate_hm (-0.0964)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (-0.0753)
+
+-----------------------------------------------------
+
+Property ID: 15 noel terrace winlaton mill blaydon-on-tyne tyne and wear ne21 6sd
+  - Sale Price:      £200,000
+  - Predicted Price: £141,117
+  - Absolute Error:  £58,883
+  - Percentage Error: 29.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2950)
+    2. num__0Unknown__hm (-0.0880)
+    3. num__2Moderate_hm (-0.0849)
+
+-----------------------------------------------------
+
+Property ID: 32 johnston place inverness inverness-shire iv2 4jh
+  - Sale Price:      £135,000
+  - Predicted Price: £95,663
+  - Absolute Error:  £39,337
+  - Percentage Error: 29.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6210)
+    2. dna_x_aesthetic (-0.1735)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1256)
+
+-----------------------------------------------------
+
+Property ID: 33a high street fortrose ross and cromarty iv10 8su
+  - Sale Price:      £160,000
+  - Predicted Price: £114,654
+  - Absolute Error:  £45,346
+  - Percentage Error: 28.3%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2183)
+    2. dna_x_aesthetic (-0.2085)
+    3. latitude (-0.0578)
+
+-----------------------------------------------------
+
+Property ID: 132 hunter drive irvine ayrshire ka12 9az
+  - Sale Price:      £74,000
+  - Predicted Price: £94,785
+  - Absolute Error:  £20,785
+  - Percentage Error: 28.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4927)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.1367)
+    3. dna_x_aesthetic (-0.0850)
+
+-----------------------------------------------------
+
+Property ID: 21 hutchison drive darvel ayrshire ka17 0bl
+  - Sale Price:      £155,000
+  - Predicted Price: £198,446
+  - Absolute Error:  £43,446
+  - Percentage Error: 28.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2487)
+    2. oof_pred_head_C_census (-0.0633)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0595)
+
+-----------------------------------------------------
+
+Property ID: 120 overmills road ayr ayrshire ka7 3lq
+  - Sale Price:      £167,500
+  - Predicted Price: £213,514
+  - Absolute Error:  £46,014
+  - Percentage Error: 27.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1149)
+    2. oof_pred_head_compass_raw (-0.0483)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0334)
+
+-----------------------------------------------------
+
+Property ID: 20 chattan avenue stirling stirlingshire fk9 5rd
+  - Sale Price:      £185,000
+  - Predicted Price: £134,964
+  - Absolute Error:  £50,036
+  - Percentage Error: 27.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3969)
+    2. dna_x_aesthetic (-0.1586)
+    3. num__INT_avg_estimated_price (-0.0557)
+
+-----------------------------------------------------
+
+Property ID: 28 caswell road leominster herefordshire hr6 8az
+  - Sale Price:      £275,000
+  - Predicted Price: £201,994
+  - Absolute Error:  £73,006
+  - Percentage Error: 26.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1917)
+    2. num__2Moderate_hm (-0.0708)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (-0.0491)
+
+-----------------------------------------------------
+
+Property ID: 34 ailsa road saltcoats ayrshire ka21 6lr
+  - Sale Price:      £133,000
+  - Predicted Price: £166,855
+  - Absolute Error:  £33,855
+  - Percentage Error: 25.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2849)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.0681)
+    3. oof_pred_head_C_census (-0.0571)
+
+-----------------------------------------------------
+
+Property ID: 19 sunnyside kilmaurs kilmarnock ayrshire ka3 2ry
+  - Sale Price:      £302,500
+  - Predicted Price: £226,368
+  - Absolute Error:  £76,132
+  - Percentage Error: 25.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_C_census (-0.0906)
+    2. oof_pred_head_A_dna_raw (+0.0877)
+    3. dna_minus_census (-0.0634)
+
+-----------------------------------------------------
+
+Property ID: 29 archers avenue stirling stirlingshire fk7 7rj
+  - Sale Price:      £135,000
+  - Predicted Price: £101,096
+  - Absolute Error:  £33,904
+  - Percentage Error: 25.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4321)
+    2. dna_x_aesthetic (-0.1795)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0722)
+
+-----------------------------------------------------
+
+Property ID: 10 heathwood crescent tillicoultry clackmannanshire fk13 6qp
+  - Sale Price:      £276,000
+  - Predicted Price: £207,124
+  - Absolute Error:  £68,876
+  - Percentage Error: 25.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1622)
+    2. oof_pred_head_compass_raw (-0.0800)
+    3. dna_x_aesthetic (-0.0425)
+
+-----------------------------------------------------
+
+Property ID: 77 traquair gardens dundee angus dd4 0tq
+  - Sale Price:      £152,000
+  - Predicted Price: £115,924
+  - Absolute Error:  £36,076
+  - Percentage Error: 23.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4285)
+    2. dna_x_aesthetic (-0.1660)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0696)
+
+-----------------------------------------------------
+
+Property ID: 80 nevis park inverness inverness-shire iv3 8pp
+  - Sale Price:      £302,000
+  - Predicted Price: £231,006
+  - Absolute Error:  £70,994
+  - Percentage Error: 23.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1383)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.0278)
+    3. num_images_total (+0.0224)
+
+-----------------------------------------------------
+
+Property ID: 42 millbarr grove barrmill beith ayrshire ka15 1ga
+  - Sale Price:      £230,000
+  - Predicted Price: £176,791
+  - Absolute Error:  £53,209
+  - Percentage Error: 23.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3866)
+    2. price_change_since_last (-0.0534)
+    3. dna_x_aesthetic (-0.0517)
+
+-----------------------------------------------------
+
+Property ID: 1 galloway avenue ayr ayrshire ka8 9ns
+  - Sale Price:      £65,000
+  - Predicted Price: £79,983
+  - Absolute Error:  £14,983
+  - Percentage Error: 23.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6413)
+    2. dna_x_aesthetic (-0.1784)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0798)
+
+-----------------------------------------------------
+
+Property ID: 11d maunsheugh road fenwick kilmarnock ayrshire ka3 6an
+  - Sale Price:      £400,000
+  - Predicted Price: £309,252
+  - Absolute Error:  £90,748
+  - Percentage Error: 22.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1249)
+    2. dna_x_aesthetic (+0.0706)
+    3. dna_minus_census (-0.0540)
+
+-----------------------------------------------------
+
+Property ID: west cottage leny road callander perthshire fk17 8al
+  - Sale Price:      £550,000
+  - Predicted Price: £425,311
+  - Absolute Error:  £124,689
+  - Percentage Error: 22.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1378)
+    2. dna_x_aesthetic (+0.0562)
+    3. price_change_since_last (+0.0454)
+
+-----------------------------------------------------
+
+Property ID: flat 26 naventis court singleton street blackpool fy1 5ax
+  - Sale Price:      £38,000
+  - Predicted Price: £46,598
+  - Absolute Error:  £8,598
+  - Percentage Error: 22.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.9499)
+    2. dna_x_aesthetic (-0.2432)
+    3. num__2Moderate_hm (-0.1576)
+
+-----------------------------------------------------
+
+Property ID: icknield twitchell road great missenden buckinghamshire hp16 0bq
+  - Sale Price:      £405,000
+  - Predicted Price: £495,772
+  - Absolute Error:  £90,772
+  - Percentage Error: 22.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2603)
+    2. dna_x_aesthetic (+0.0926)
+    3. num__bricksandlogic_estimated_price_gbp__numeric_extracted_or_original_text__bnl (+0.0824)
+
+-----------------------------------------------------
+
+Property ID: 27 scotston gardens dundee angus dd4 7un
+  - Sale Price:      £287,000
+  - Predicted Price: £351,230
+  - Absolute Error:  £64,230
+  - Percentage Error: 22.4%
+  - Top Contributing Features (SHAP Value):
+    1. num__last_sold_price_gbp_hm (+0.0660)
+    2. dna_x_aesthetic (+0.0575)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (+0.0405)
+
+-----------------------------------------------------
+
+Property ID: 22 delhi road moordown bournemouth bournemouth christchurch and poole bh9 2ss
+  - Sale Price:      £307,000
+  - Predicted Price: £373,892
+  - Absolute Error:  £66,892
+  - Percentage Error: 21.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1324)
+    2. dna_x_aesthetic (+0.0388)
+    3. num__INT_avg_estimated_price (+0.0186)
+
+-----------------------------------------------------
+
+Property ID: 2 moorfield place gatehead kilmarnock ayrshire ka2 0ax
+  - Sale Price:      £198,000
+  - Predicted Price: £241,070
+  - Absolute Error:  £43,070
+  - Percentage Error: 21.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2073)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.0568)
+    3. oof_pred_head_B_aesthetic (+0.0552)
+
+-----------------------------------------------------
+
+Property ID: 29 glenbo drive denny stirlingshire fk6 5pq
+  - Sale Price:      £140,500
+  - Predicted Price: £109,999
+  - Absolute Error:  £30,501
+  - Percentage Error: 21.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4245)
+    2. dna_x_aesthetic (-0.2153)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0889)
+
+-----------------------------------------------------
+
+Property ID: 39 plann road kilmarnock ayrshire ka2 0en
+  - Sale Price:      £200,200
+  - Predicted Price: £243,544
+  - Absolute Error:  £43,344
+  - Percentage Error: 21.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1176)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.0357)
+    3. num__INT_avg_estimated_price (-0.0351)
+
+-----------------------------------------------------
+
+Property ID: 14 medine court beith ayrshire ka15 2dh
+  - Sale Price:      £125,000
+  - Predicted Price: £97,945
+  - Absolute Error:  £27,055
+  - Percentage Error: 21.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4796)
+    2. oof_pred_head_C_census (-0.0907)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0822)
+
+-----------------------------------------------------
+
+Property ID: 35 sinclair street stevenston ayrshire ka20 4ap
+  - Sale Price:      £66,500
+  - Predicted Price: £52,205
+  - Absolute Error:  £14,295
+  - Percentage Error: 21.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.8329)
+    2. dna_x_aesthetic (-0.2916)
+    3. num__INT_avg_estimated_price (-0.1214)
+
+-----------------------------------------------------
+
+Property ID: 15 the sheilings cambus alloa clackmannanshire fk10 2nn
+  - Sale Price:      £238,000
+  - Predicted Price: £288,608
+  - Absolute Error:  £50,608
+  - Percentage Error: 21.3%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.0939)
+    2. dna_x_aesthetic (+0.0544)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0373)
+
+-----------------------------------------------------
+
+Property ID: 2 wattfield road ayr ayrshire ka7 2sw
+  - Sale Price:      £340,000
+  - Predicted Price: £412,090
+  - Absolute Error:  £72,090
+  - Percentage Error: 21.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1670)
+    2. dna_x_aesthetic (+0.0716)
+    3. num__INT_hm_price_vs_last_sold_ratio (+0.0433)
+
+-----------------------------------------------------
+
+Property ID: 26 fairmount drive sauchie alloa clackmannanshire fk10 3hn
+  - Sale Price:      £200,000
+  - Predicted Price: £158,549
+  - Absolute Error:  £41,451
+  - Percentage Error: 20.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1827)
+    2. dna_x_aesthetic (-0.1382)
+    3. oof_pred_head_C_census (-0.0931)
+
+-----------------------------------------------------
+
+Property ID: 13 fleming crescent saltcoats ayrshire ka21 6ef
+  - Sale Price:      £90,000
+  - Predicted Price: £71,465
+  - Absolute Error:  £18,535
+  - Percentage Error: 20.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6975)
+    2. dna_x_aesthetic (-0.2369)
+    3. num__INT_avg_estimated_price (-0.1128)
+
+-----------------------------------------------------
+
+Property ID: 10 benview road tain ross and cromarty iv19 1lw
+  - Sale Price:      £135,000
+  - Predicted Price: £162,516
+  - Absolute Error:  £27,516
+  - Percentage Error: 20.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2046)
+    2. oof_pred_head_C_census (-0.0971)
+    3. num__INT_avg_estimated_price (-0.0546)
+
+-----------------------------------------------------
+
+Property ID: 11 high street kincardine alloa fife fk10 4rj
+  - Sale Price:      £75,000
+  - Predicted Price: £59,723
+  - Absolute Error:  £15,277
+  - Percentage Error: 20.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.7913)
+    2. dna_x_aesthetic (-0.2783)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1201)
+
+-----------------------------------------------------
+
+Property ID: 26 craiglea avenue crosshouse kilmarnock ayrshire ka2 0jd
+  - Sale Price:      £110,000
+  - Predicted Price: £87,843
+  - Absolute Error:  £22,157
+  - Percentage Error: 20.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6010)
+    2. dna_x_aesthetic (-0.1370)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1301)
+
+-----------------------------------------------------
+
+Property ID: 67 atrium way bonnybridge stirlingshire fk4 2dp
+  - Sale Price:      £250,000
+  - Predicted Price: £199,808
+  - Absolute Error:  £50,192
+  - Percentage Error: 20.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1560)
+    2. num__INT_avg_estimated_price (-0.0387)
+    3. price_change_since_last (-0.0320)
+
+-----------------------------------------------------
+
+Property ID: 9 keith place kilmarnock ayrshire ka3 7ns
+  - Sale Price:      £101,000
+  - Predicted Price: £80,741
+  - Absolute Error:  £20,259
+  - Percentage Error: 20.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6230)
+    2. dna_x_aesthetic (-0.1695)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1066)
+
+-----------------------------------------------------
+
+Property ID: 1b watson terrace drongan ayr ayrshire ka6 7aa
+  - Sale Price:      £160,000
+  - Predicted Price: £127,975
+  - Absolute Error:  £32,025
+  - Percentage Error: 20.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4090)
+    2. num__INT_hm_price_vs_last_sold_ratio (-0.0969)
+    3. oof_pred_head_C_census (-0.0706)
+
+-----------------------------------------------------
+
+Property ID: 41e lainshaw street stewarton kilmarnock ayrshire ka3 5by
+  - Sale Price:      £75,000
+  - Predicted Price: £89,745
+  - Absolute Error:  £14,745
+  - Percentage Error: 19.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1958)
+    2. dna_x_aesthetic (-0.1378)
+    3. oof_pred_head_C_census (-0.1316)
+
+-----------------------------------------------------
+
+Property ID: 87 loughton way buckhurst hill essex ig9 6as
+  - Sale Price:      £290,000
+  - Predicted Price: £346,591
+  - Absolute Error:  £56,591
+  - Percentage Error: 19.5%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1363)
+    2. num__bricksandlogic_estimated_price_gbp__numeric_extracted_or_original_text__bnl (+0.0719)
+    3. dna_x_aesthetic (+0.0697)
+
+-----------------------------------------------------
+
+Property ID: 13 fairmount drive sauchie alloa clackmannanshire fk10 3hn
+  - Sale Price:      £290,000
+  - Predicted Price: £233,698
+  - Absolute Error:  £56,302
+  - Percentage Error: 19.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_C_census (-0.0756)
+    2. latitude (-0.0467)
+    3. num__last_sold_price_gbp_hm (+0.0438)
+
+-----------------------------------------------------
+
+Property ID: 11 high street wicken ely cambridgeshire cb7 5xr
+  - Sale Price:      £201,500
+  - Predicted Price: £240,230
+  - Absolute Error:  £38,730
+  - Percentage Error: 19.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.0987)
+    2. num__2Moderate_hm (-0.0910)
+    3. dna_x_aesthetic (+0.0438)
+
+-----------------------------------------------------
+
+Property ID: 98 churchill road poole bournemouth christchurch and poole bh12 2lu
+  - Sale Price:      £209,000
+  - Predicted Price: £248,980
+  - Absolute Error:  £39,980
+  - Percentage Error: 19.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1626)
+    2. num__last_sold_price_gbp_hm (+0.1567)
+    3. dna_x_aesthetic (-0.0824)
+
+-----------------------------------------------------
+
+Property ID: 55 aboyne avenue dundee angus dd4 7tg
+  - Sale Price:      £124,000
+  - Predicted Price: £100,364
+  - Absolute Error:  £23,636
+  - Percentage Error: 19.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4701)
+    2. dna_x_aesthetic (-0.1836)
+    3. num__INT_avg_estimated_price (-0.0790)
+
+-----------------------------------------------------
+
+Property ID: 9 kilmaurs road kilmarnock ayrshire ka3 1nt
+  - Sale Price:      £216,000
+  - Predicted Price: £175,121
+  - Absolute Error:  £40,879
+  - Percentage Error: 18.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2643)
+    2. oof_pred_head_C_census (-0.0697)
+    3. num__INT_avg_estimated_price (-0.0557)
+
+-----------------------------------------------------
+
+Property ID: 48 the vale kirk ella hull east riding of yorkshire hu10 7ps
+  - Sale Price:      £280,000
+  - Predicted Price: £331,662
+  - Absolute Error:  £51,662
+  - Percentage Error: 18.5%
+  - Top Contributing Features (SHAP Value):
+    1. num__last_sold_price_gbp_hm (+0.1388)
+    2. oof_pred_head_A_dna_raw (+0.1149)
+    3. num__0Unknown__hm (-0.0672)
+
+-----------------------------------------------------
+
+Property ID: 29 ardbeg avenue kilmarnock ayrshire ka3 2ap
+  - Sale Price:      £74,000
+  - Predicted Price: £60,373
+  - Absolute Error:  £13,627
+  - Percentage Error: 18.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.7974)
+    2. dna_x_aesthetic (-0.2288)
+    3. num__INT_avg_estimated_price (-0.1089)
+
+-----------------------------------------------------
+
+Property ID: 5 carronvale road larbert stirlingshire fk5 3lz
+  - Sale Price:      £410,237
+  - Predicted Price: £335,199
+  - Absolute Error:  £75,038
+  - Percentage Error: 18.3%
+  - Top Contributing Features (SHAP Value):
+    1. price_change_since_last (+0.0539)
+    2. dna_x_aesthetic (+0.0504)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0359)
+
+-----------------------------------------------------
+
+Property ID: 21 abercrombie street camelon falkirk stirlingshire fk1 4ez
+  - Sale Price:      £60,000
+  - Predicted Price: £70,911
+  - Absolute Error:  £10,911
+  - Percentage Error: 18.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6399)
+    2. dna_x_aesthetic (-0.2399)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1002)
+
+-----------------------------------------------------
+
+Property ID: 164 high road saltcoats ayrshire ka21 5qp
+  - Sale Price:      £85,000
+  - Predicted Price: £100,437
+  - Absolute Error:  £15,437
+  - Percentage Error: 18.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4835)
+    2. dna_x_aesthetic (-0.1864)
+    3. num__INT_avg_estimated_price (-0.0730)
+
+-----------------------------------------------------
+
+Property ID: 31 woods avenue marsden huddersfield west yorkshire hd7 6jx
+  - Sale Price:      £240,000
+  - Predicted Price: £196,936
+  - Absolute Error:  £43,064
+  - Percentage Error: 17.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3301)
+    2. num__last_sold_price_gbp_hm (+0.2618)
+    3. num__2Moderate_hm (-0.1133)
+
+-----------------------------------------------------
+
+Property ID: 86 rannoch place irvine ayrshire ka12 9nq
+  - Sale Price:      £87,000
+  - Predicted Price: £71,400
+  - Absolute Error:  £15,600
+  - Percentage Error: 17.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6458)
+    2. dna_x_aesthetic (-0.2258)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1106)
+
+-----------------------------------------------------
+
+Property ID: 136 garesfield gardens burnopfield newcastle upon tyne county durham ne16 6lq
+  - Sale Price:      £55,000
+  - Predicted Price: £64,846
+  - Absolute Error:  £9,846
+  - Percentage Error: 17.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.8356)
+    2. dna_x_aesthetic (-0.1794)
+    3. num__homipi_estimated_price_range_lower_bound_gbp_hm (-0.1253)
+
+-----------------------------------------------------
+
+Property ID: 12 old school wynd ochiltree cumnock ayrshire ka18 2da
+  - Sale Price:      £90,000
+  - Predicted Price: £74,047
+  - Absolute Error:  £15,953
+  - Percentage Error: 17.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.6958)
+    2. dna_x_aesthetic (-0.2633)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1343)
+
+-----------------------------------------------------
+
+Property ID: 108d clepington road dundee angus dd3 7sx
+  - Sale Price:      £85,500
+  - Predicted Price: £100,613
+  - Absolute Error:  £15,113
+  - Percentage Error: 17.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4297)
+    2. dna_x_aesthetic (-0.2032)
+    3. oof_pred_head_C_census (-0.0734)
+
+-----------------------------------------------------
+
+Property ID: 12f warwickhill road kilmarnock ayrshire ka1 2lt
+  - Sale Price:      £72,000
+  - Predicted Price: £84,384
+  - Absolute Error:  £12,384
+  - Percentage Error: 17.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4892)
+    2. dna_x_aesthetic (-0.1885)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.1033)
+
+-----------------------------------------------------
+
+Property ID: 24 wilson gardens newcastle upon tyne tyne and wear ne3 4ja
+  - Sale Price:      £425,000
+  - Predicted Price: £497,257
+  - Absolute Error:  £72,257
+  - Percentage Error: 17.0%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2821)
+    2. dna_x_aesthetic (+0.0671)
+    3. num__bricksandlogic_estimated_price_gbp__numeric_extracted_or_original_text__bnl (+0.0618)
+
+-----------------------------------------------------
+
+Property ID: 15 portmark avenue ayr ayrshire ka7 4dd
+  - Sale Price:      £368,000
+  - Predicted Price: £429,826
+  - Absolute Error:  £61,826
+  - Percentage Error: 16.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2748)
+    2. dna_x_aesthetic (+0.0646)
+    3. num__2Moderate_hm (+0.0404)
+
+-----------------------------------------------------
+
+Property ID: 7 leeward park ayr ayrshire ka7 4xf
+  - Sale Price:      £432,000
+  - Predicted Price: £359,772
+  - Absolute Error:  £72,228
+  - Percentage Error: 16.7%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1169)
+    2. dna_x_aesthetic (+0.0577)
+    3. num__INT_hm_price_vs_last_sold_ratio (+0.0369)
+
+-----------------------------------------------------
+
+Property ID: 8 birch place culloden inverness inverness-shire iv2 7lb
+  - Sale Price:      £192,500
+  - Predicted Price: £224,370
+  - Absolute Error:  £31,870
+  - Percentage Error: 16.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1740)
+    2. num__INT_avg_estimated_price (-0.0529)
+    3. dna_x_aesthetic (-0.0500)
+
+-----------------------------------------------------
+
+Property ID: 65 craigie avenue dundee angus dd4 7ns
+  - Sale Price:      £158,500
+  - Predicted Price: £132,674
+  - Absolute Error:  £25,826
+  - Percentage Error: 16.3%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4131)
+    2. dna_x_aesthetic (-0.0725)
+    3. oof_pred_head_C_census (-0.0643)
+
+-----------------------------------------------------
+
+Property ID: 127 clonners field stapeley nantwich cheshire east cw5 7gu
+  - Sale Price:      £87,500
+  - Predicted Price: £101,637
+  - Absolute Error:  £14,137
+  - Percentage Error: 16.2%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4943)
+    2. dna_x_aesthetic (-0.1294)
+    3. num__2Moderate_hm (-0.1063)
+
+-----------------------------------------------------
+
+Property ID: 64 valeview stenhousemuir larbert stirlingshire fk5 3bz
+  - Sale Price:      £158,000
+  - Predicted Price: £132,514
+  - Absolute Error:  £25,486
+  - Percentage Error: 16.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.3103)
+    2. dna_x_aesthetic (-0.1748)
+    3. oof_pred_head_C_census (-0.0871)
+
+-----------------------------------------------------
+
+Property ID: 33 meadow way chigwell essex ig7 6lr
+  - Sale Price:      £1,750,000
+  - Predicted Price: £1,472,165
+  - Absolute Error:  £277,835
+  - Percentage Error: 15.9%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.5477)
+    2. num__2Moderate_hm (+0.3643)
+    3. num__INT_hm_price_vs_last_sold_ratio (+0.1952)
+
+-----------------------------------------------------
+
+Property ID: 14 vorlich place stirling stirlingshire fk9 5df
+  - Sale Price:      £187,000
+  - Predicted Price: £157,420
+  - Absolute Error:  £29,580
+  - Percentage Error: 15.8%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2520)
+    2. dna_x_aesthetic (-0.0864)
+    3. price_change_since_last (+0.0628)
+
+-----------------------------------------------------
+
+Property ID: 3 gloucester road bath bath and north east somerset ba1 7bh
+  - Sale Price:      £420,000
+  - Predicted Price: £485,695
+  - Absolute Error:  £65,695
+  - Percentage Error: 15.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.2124)
+    2. dna_x_aesthetic (+0.0664)
+    3. num__bricksandlogic_estimated_price_gbp__numeric_extracted_or_original_text__bnl (+0.0641)
+
+-----------------------------------------------------
+
+Property ID: 27 larch street dundee angus dd1 5nq
+  - Sale Price:      £233,000
+  - Predicted Price: £196,657
+  - Absolute Error:  £36,343
+  - Percentage Error: 15.6%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.1666)
+    2. dna_x_aesthetic (-0.0828)
+    3. latitude (-0.0426)
+
+-----------------------------------------------------
+
+Property ID: 7 rose grove sowerby bridge west yorkshire hx6 2rj
+  - Sale Price:      £90,000
+  - Predicted Price: £103,815
+  - Absolute Error:  £13,815
+  - Percentage Error: 15.4%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.4791)
+    2. dna_x_aesthetic (-0.1351)
+    3. num__2Moderate_hm (-0.1088)
+
+-----------------------------------------------------
+
+Property ID: flat 16 st margarets court arundel road angmering littlehampton west sussex bn16 4nq
+  - Sale Price:      £192,000
+  - Predicted Price: £162,545
+  - Absolute Error:  £29,455
+  - Percentage Error: 15.3%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (-0.2424)
+    2. num__homipi_estimated_price_range_lower_bound_gbp_hm (-0.0792)
+    3. num__INT_hm_price_vs_last_sold_ratio (-0.0558)
+
+-----------------------------------------------------
+
+Property ID: 21 finnick glen ayr ayrshire ka7 4rf
+  - Sale Price:      £325,325
+  - Predicted Price: £374,596
+  - Absolute Error:  £49,271
+  - Percentage Error: 15.1%
+  - Top Contributing Features (SHAP Value):
+    1. oof_pred_head_A_dna_raw (+0.1532)
+    2. dna_x_aesthetic (+0.0889)
+    3. num__INT_hm_price_vs_last_sold_ratio (+0.0438)
+
+-----------------------------------------------------
+
+Property ID: 22 strathallan road bridge of allan stirling stirlingshire fk9 4bs
+  - Sale Price:      £253,240
+  - Predicted Price: £291,547
+  - Absolute Error:  £38,307
+  - Percentage Error: 15.1%
+  - Top Contributing Features (SHAP Value):
+    1. num__homipi_estimated_price_range_lower_bound_gbp_hm (+0.0364)
+    2. latitude (-0.0330)
+    3. num__bricksandlogic_estimated_price_gbp__numeric_extracted_or_original_text__bnl (-0.0131)
+
+-----------------------------------------------------
+

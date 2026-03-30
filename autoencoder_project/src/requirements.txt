@@ -1,0 +1,6 @@
+# src/requirements.txt
+pandas
+numpy
+tensorflow==2.15.*
+scikit-learn
+optuna
