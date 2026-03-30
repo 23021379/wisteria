@@ -1,27 +1,72 @@
-# wisteria
-Intelligence driven real estate listing portal.
+# Wisteria: An Intelligence-Driven Real Estate & PropTech Platform
+[![Status](https://img.shields.io/badge/status-in%20development-green)](https://github.com/brandonhenson/wisteria)
 
-Wisteria is a bleeding-edge real estate listings portal and intelligent information system designed to transcend the static data tables of traditional platforms (like Rightmove or Zoopla). By fusing coarse-grain geographic context with fine-grain, multi-modal property data, Wisteria provides highly accurate, automated property valuations and a highly personalised, AI-driven user experience. Its ultimate goal is to eliminate buyer analysis paralysis, build institutional-grade trust through transparency, and actively manage the user's property search as a persistent, strategic partner.
-Every single feature mentioned previously are all reliant on the wisteria database, whether the data comes from ai analysis, model predictions, historical data, geographical data, or persona attributes; everything that is used by wisteria was produced by wisteria.
-1. The Architectural Pipeline: How It Works
-Wisteria’s backend is a sophisticated, multi-stage ingestion and inference engine engineered to handle high-dimensional, highly interconnected tabular and spatial data.
-Asynchronous Scraping & Ingestion: The pipeline is triggered via a Mailgun inbound parse webhook upon receiving new listing emails. It utilises concurrent Apify actors to scrape raw data and images from portals and agency sites, while executing OCR on EPC registers. This is cross-referenced with disparate automated valuation models (AVMs like Homipi, Bricks&Logic, and Mouseprice) and enriched with coarse-grain environmental datasets (ONS, CDRC, AHAH).
-Geospatial & Feature Engineering: To capture complex spatial relationships, Wisteria transforms global geographic subsets into specialised encodings (the Atlas, Compass, and Microscope subsets). This produces geographically weighted features and engineered feature interactions (e.g., total_floor_area/number_of_bedrooms). Missing data across millions of rows is handled via robust imputation protocols, and Autoencoders (AE) and Principal Component Analysis (PCA) are utilised for aggressive dimensionality reduction on highly collinear, sparse subsets.
-The "Council of LGBM Experts" Model:
-Stage 1 (The Specialists): Specialised LightGBM models are trained on designated feature heads (e.g., census data, spatial data) to produce Out-of-Fold (OOF) predictions.
-Stage 2 (The Fusion Model): A final, rigorously regularised LGBM fusion model is trained on the raw features plus the OOF predictions. This architecture completely eliminated the generalisation gap, achieving a highly robust Holdout MAE of £11,448.84.This is roughly a 97% accuracy. This is measured on properties from scotland, england and wales. Scottish and welsh properties have far less data (from census and other government agencies), so they bring the accuracy down.A total of 10,000 properties had their listing images analysed by the wisteria pipeline, and used as the training, testing, and validation sets. Their actual selling prices were used as the labels/targets.
-2. The Qualitative Engine: Multi-Modal Analysis
-Wisteria does not just parse numbers; it "sees" the property through an asynchronous, concurrent Gemini API pipeline.
-Spatial Mapping & Floorplan Deconstruction: Gemini analyses the floorplan to extract room dimensions and labels, dynamically assigning property images to their respective rooms.
-Semantic Tagging & Embeddings: Images are processed to extract niche qualitative tags (e.g., SP_SPACE, SP_MODERN, SP_POTENTIAL, has_kitchen_island). A dual-head sentiment regressor and archetype clustering model translate these qualitative sentiments and aesthetic styles into dense quantitative tensors that directly inform the valuation model.
-Persona Room Ratings: The pipeline evaluates rooms based on simulated demographic "personas" (e.g., young family, professional), quantifying what aesthetic and functional features matter most to specific buyer types.
-3. The User Ecosystem: How It Improves Lives
-Wisteria translates its immense backend complexity into a suite of highly intuitive, user-centric tools that fundamentally de-risk the home-buying process.
-The Wisteria Concierge (Natural Language Search): A persistent AI strategist powered by a LangChain/LlamaIndex multi-tool agent and a CrewAI anticipatory generation system. It goes beyond simple Q&A. Users can execute multi-modal queries (e.g., uploading an image and asking "Find me something like this, but in Newcastle"). The Concierge manages check-lists, conducts proactive trade-off analysis (weighing "deal-breakers" against "nice-to-haves"), and acts as a gateway to human estate agents by pre-compiling search briefs.
-Valuation Deconstruction: Leveraging SHAP (SHapley Additive exPlanations), Wisteria builds absolute trust by providing a narrative waterfall chart of the home's value. It visually explains the baseline LSOA price and exactly how specific feature interactions (e.g., "Outstanding school catchment adds +£22,000", "Busy road reduces -£8,000") dictate the final price.
-Comparative Intelligence: Eliminating the need for user spreadsheets, this feature allows conversational comparison of favorited properties. It dynamically generates an automated Pro/Con list and a "Persona-Based Scorecard," ranking how well a property fits the user's specific lifestyle profile.
-FutureSight Property Report: An institutional-grade due diligence report. Utilising temporal modeling and historical sales data, it projects future financial scenarios. It includes a Neighborhood Evolution Score (tracking incoming planning permissions) and a Risk Radar (scoring flood risk, noise pollution, and market volatility).
-Dynamic Choropleth Maps: Built with Mapbox GL JS and ONS boundaries, these heatmaps allow users to visually prospect neighborhoods. The maps are dynamically colored based on the user's bespoke "desires" (weighting crime rates, AHAH pub accessibility, and deprivation indices).
-Find Similar, But Better: A smart search mechanism that utilises Wisteria’s qualitative AE encodings. A user can view a property and filter for "similar aesthetic, but larger garden and higher walkability score."
-Floorplan Locator & Immersive UI: Images are upscaled and color-graded to match Wisteria's design language. As users scroll through images, a dynamic floorplan map highlights exactly where in the house the photo was taken.
-Renovation & Lifestyle Simulations: Users can inject hypothetical changes (e.g., "kitchen revamp") to see how the meta-model adjusts the property valuation. A lifestyle simulator calculates tangible day-to-day impacts, such as commute times and EPC-derived utility bills.
+**Wisteria is a bleeding-edge real estate listings portal designed to transcend the static data tables of traditional platforms like Rightmove or Zoopla. By fusing multi-modal property data with sophisticated AI, Wisteria provides automated valuations, deep qualitative insights, and a truly personalized user experience, aiming to eliminate buyer "analysis paralysis" and build institutional-grade trust.**
+
+---
+
+### Table of Contents
+1.  [The Problem with PropTech Today](#the-problem-with-proptech-today)
+2.  [The Solution: Wisteria's User-Centric Features](#the-solution-wisterias-user-centric-features)
+3.  [Architectural Deep Dive](#architectural-deep-dive)
+    *   [Data Ingestion & Feature Engineering](#1-data-ingestion--feature-engineering)
+    *   [The Qualitative Engine: Seeing the Property](#2-the-qualitative-engine-seeing-the-property)
+    *   [The Valuation Model: A "Council of Experts"](#3-the-valuation-model-a-council-of-experts)
+4.  [Tech Stack](#tech-stack)
+5.  [Data Sources](#data-sources)
+
+---
+
+### The Problem with PropTech Today
+Traditional real estate portals present data as disconnected, static tables. This approach burdens the user with immense cognitive load, leading to:
+*   **Analysis Paralysis:** Users are forced to manually compare dozens of listings across spreadsheets.
+*   **Opaque Valuations:** Simple price estimates lack transparency, eroding user trust.
+*   **Qualitative Blind Spots:** Key lifestyle and aesthetic details are lost, making it hard to find a house that truly *feels* right.
+
+### The Solution: Wisteria's User-Centric Features
+
+Wisteria translates its immense backend complexity into a suite of highly intuitive tools that de-risk and personalize the home-buying process.
+
+*   💬 **The Wisteria Concierge:** A persistent AI strategist (LangChain/LlamaIndex/CrewAI) that manages multi-modal searches (`"Find me something like this image, but in Newcastle"`), conducts proactive trade-off analysis, and pre-compiles search briefs for human agents.
+*   💡 **Explainable Valuations (XAI):** Leveraging SHAP, Wisteria provides a narrative waterfall chart of a home's value, visually explaining how specific features (`+£22k for school catchment`, `-£8k for busy road`) dictate the final price.
+*   ⚖️ **Comparative Intelligence:** An automated Pro/Con generator and "Persona-Based Scorecard" that conversationally compares favorited properties, eliminating the need for user spreadsheets.
+*   📈 **FutureSight Property Report:** An institutional-grade due diligence report projecting future financial scenarios, including a Neighborhood Evolution Score and a Risk Radar (flood risk, noise pollution).
+*   🗺️ **Dynamic Desire Maps:** Interactive choropleth maps (Mapbox GL JS) that allow users to visually prospect neighborhoods based on their own weighted desires (crime rates, pub accessibility, deprivation indices).
+
+---
+
+### Architectural Deep Dive
+Wisteria's backend is a sophisticated, multi-stage ingestion and inference engine built to handle high-dimensional, interconnected data.
+
+#### 1. Data Ingestion & Feature Engineering
+*   **Asynchronous Scraping:** A Mailgun inbound webhook triggers concurrent Apify actors upon receiving new listing emails. The pipeline scrapes raw data/images from portals, executes OCR on EPC registers, and cross-references with third-party Automated Valuation Models (AVMs).
+*   **Geospatial Encoding:** Global geographic subsets are transformed into specialized local encodings (`Atlas`, `Compass`, `Microscope`) to produce geographically weighted features and capture complex spatial relationships.
+*   **Dimensionality Reduction:** Autoencoders (AE) and Principal Component Analysis (PCA) are utilized for aggressive dimensionality reduction on highly collinear, sparse subsets.
+
+#### 2. The Qualitative Engine: Seeing the Property
+The system "sees" and understands properties via an asynchronous, concurrent Gemini API pipeline.
+*   **Floorplan Deconstruction:** Gemini analyzes floorplans to extract room dimensions, dynamically assigning property images to their respective rooms.
+*   **Semantic Tagging:** Images are processed to extract niche qualitative tags (`has_kitchen_island`, `modern_aesthetic`, `renovation_potential`). A dual-head model translates these qualitative sentiments into dense quantitative tensors for the valuation model.
+*   **Persona-Based Ratings:** The pipeline evaluates rooms based on simulated demographic "personas" (e.g., *Young Family*, *Professional Couple*), quantifying what features matter most to specific buyer types.
+
+#### 3. The Valuation Model: A "Council of Experts"
+A stacked generalization architecture was developed to eliminate the generalization gap between training and holdout sets.
+*   **Stage 1 (The Specialists):** Multiple specialized LightGBM models are trained on designated feature heads (e.g., census data, spatial data, qualitative tensors) to produce Out-of-Fold (OOF) predictions.
+*   **Stage 2 (The Fusion Model):** A final, rigorously regularized LightGBM model is trained on the raw features *plus* the OOF predictions from Stage 1.
+
+> **Result:** A highly robust **Holdout Mean Absolute Error (MAE) of £11,448.84** across 10,000 properties in Scotland, England, and Wales. This represents an accuracy of approximately 97%.
+
+---
+
+### 🛠️ Tech Stack
+*   **AI & Machine Learning:** LightGBM, Scikit-Learn, TensorFlow/Keras (for Autoencoders), SHAP (for XAI), LangChain, LlamaIndex, CrewAI, Gemini API.
+*   **Backend & Data Processing:** Python, Apify, Mailgun API, Webhooks, Asynchronous Processing.
+*   **Frontend & Visualization:** Mapbox GL JS.
+
+---
+
+### 📚 Data Sources
+*   **Property Listings & AVMs:** Scraped data from major UK portals, enhanced with data from `Homipi`, `Bricks&Logic`, and `Mouseprice`.
+*   **Environmental & Geospatial:** `Ordnance Survey (OS) Data Hub`, `Copernicus Land Monitoring Service`.
+*   **Socio-Economic & Demographic:** `Office for National Statistics (ONS)` (including Census 2021, Output Area Classification), `Consumer Data Research Centre (CDRC)` (including Access to Healthy Assets and Hazards - AHAH).
+*   **Government & Administrative:** `Ministry of Housing, Communities & Local Government` (Indices of Deprivation), Energy Performance Certificate (EPC) Registers.
